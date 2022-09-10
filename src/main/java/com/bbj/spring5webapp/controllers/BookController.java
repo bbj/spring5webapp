@@ -19,7 +19,7 @@ public class BookController {
 
         model.addAttribute("books", bookRepository.findAll());
 
-        return "books";
+        return "books/list"; //tell the view to look for a template named "list" under dir "books"
     }
 }
 
